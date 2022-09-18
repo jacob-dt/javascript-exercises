@@ -3,11 +3,13 @@ const removeFromArray = function(arr, ...args) {
   //first element in args array is the array that we are checking
   let a = arr;
 
-  //filter() function will return a new array containing all the array elements that pass the given condition. 
+  //filter() returns a new array containing all the array elements that pass the given condition. 
   //If no elements pass the condition it returns an empty array.
 
-  //adds array values to new array if they are not included in args[0].
+  //adds arr values to new array if they are not included in args.
   let b = a.filter(values => !args.includes(values));
+
+  //returns an array of values that arent included in args
   return b;
 
   /*const array = arrValues[0];
